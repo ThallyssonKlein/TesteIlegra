@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 @Path("/ingestlog")
 public class IngestController extends HttpServlet {
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try{
             DateFormat format = new SimpleDateFormat("MMddyyHHmmss");
             Log l = new Log(request.getParameter("url"),
@@ -41,13 +41,4 @@ public class IngestController extends HttpServlet {
             out.flush();
         }
     }
-}
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
-@EqualsAndHashCode
-class CustomResponse{
-    int status;
 }
