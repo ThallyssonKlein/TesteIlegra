@@ -1,0 +1,6 @@
+br/com/thallyssonklein/jpa/EntityManagerUtil.class
+br/com/thallyssonklein/Util.class
+br/com/thallyssonklein/entity/TopByRegion.class
+br/com/thallyssonklein/controller/MetricsController.class
+br/com/thallyssonklein/entity/Log.class
+br/com/thallyssonklein/entity/Metric.class
