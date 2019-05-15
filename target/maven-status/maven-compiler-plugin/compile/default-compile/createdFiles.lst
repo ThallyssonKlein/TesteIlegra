@@ -1,6 +1,9 @@
 br/com/thallyssonklein/jpa/EntityManagerUtil.class
+br/com/thallyssonklein/controller/CustomResponse.class
 br/com/thallyssonklein/Util.class
+br/com/thallyssonklein/controller/HealthController.class
 br/com/thallyssonklein/entity/TopByRegion.class
 br/com/thallyssonklein/controller/MetricsController.class
 br/com/thallyssonklein/entity/Log.class
+br/com/thallyssonklein/controller/IngestController.class
 br/com/thallyssonklein/entity/Metric.class

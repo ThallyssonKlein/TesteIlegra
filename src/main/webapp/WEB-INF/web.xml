@@ -17,9 +17,43 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>ingestlog</servlet-name>
+    <servlet-class>br.com.thallyssonklein.controller.IngestController</servlet-class>
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>br.com.thallyssonklein.App</param-value>
+    </init-param>
+    <init-param>
+      <param-name>requestProcessorAttribute</param-name>
+      <param-value>restApplication1ProcessorID</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>health</servlet-name>
+    <servlet-class>br.com.thallyssonklein.controller.HealthController</servlet-class>
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>br.com.thallyssonklein.App</param-value>
+    </init-param>
+    <init-param>
+      <param-name>requestProcessorAttribute</param-name>
+      <param-value>restApplication1ProcessorID</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>metrics</servlet-name>
     <url-pattern>/metrics</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ingestlog</servlet-name>
+    <url-pattern>/ingestlog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>health</servlet-name>
+    <url-pattern>/health</url-pattern>
   </servlet-mapping>
 </web-app>
