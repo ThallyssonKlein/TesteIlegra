@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8def0178-0c79-4790-8056-d58669c80c4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/CustomResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/HealthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/MetricsControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/IngestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/controller/MetricsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/controller/MetricsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/entity/Metric.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/thallyssonklein/entity/Metric.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/thallyssonklein/IngestControllerTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,37 +29,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/IngestControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-343">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="56" column="94" lean-forward="true" selection-start-line="56" selection-start-column="94" selection-end-line="56" selection-end-column="94" />
+            <state relative-caret-position="389">
+              <caret line="211" column="99" selection-start-line="211" selection-start-column="99" selection-end-line="211" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java">
+        <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/CustomResponse.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/runners/JUnit45AndHigherRunnerImpl.class">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="149">
               <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="90" column="81" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3950#3963#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="517" column="87" selection-start-line="517" selection-start-column="87" selection-end-line="517" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -70,7 +136,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>junit</find>
+      <find>log4j</find>
+      <find>met</find>
+      <find>setup</find>
+      <find>2019-05-&quot;+ day +&quot; 09:06:58.090257</find>
+      <find>2019-05-&quot;+ day +&quot; 09:07:58.090257</find>
+      <find>'NOW()'</find>
+      <find>logs</find>
     </findStrings>
+    <replaceStrings>
+      <replace>NOW()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,24 +155,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/jpa/EntityManagerUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/TopByRegion.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/MetricsControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/HealthServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/HealthControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/HealthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/CustomRespo.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/CustomResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/IngestControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java" />
       </list>
     </option>
   </component>
@@ -128,10 +205,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="684" />
-    <option name="width" value="682" />
-    <option name="height" value="727" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="-1" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -142,7 +219,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,12 +295,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="thallyssonklein" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,6 +311,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.thallyssonklein.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.thallyssonklein" />
     </key>
@@ -253,18 +333,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="IngestControllerTest.shouldPersistWhenAllParametersAreOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MetricsControllerTest.shouldMetric5Ok">
+    <configuration name="MetricsControllerTest.shouldMetric3Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TesteIlegra" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.thallyssonklein.*" />
+          <option name="PATTERN" value="br.com.thallyssonklein.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.thallyssonklein" />
-      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.IngestControllerTest" />
-      <option name="METHOD_NAME" value="shouldPersistWhenAllParametersAreOk" />
+      <option name="PACKAGE_NAME" value="br.com.thallyssonklein.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.controller.MetricsControllerTest" />
+      <option name="METHOD_NAME" value="shouldMetric3Ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricsControllerTest.shouldMetric5Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TesteIlegra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.thallyssonklein.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.thallyssonklein.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.controller.MetricsControllerTest" />
+      <option name="METHOD_NAME" value="shouldMetric5Ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricsControllerTest.shouldMetricDay4Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TesteIlegra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.thallyssonklein.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.thallyssonklein.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.controller.MetricsControllerTest" />
+      <option name="METHOD_NAME" value="shouldMetricDay4Ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricsControllerTest.shouldMetricMonth4Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TesteIlegra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.thallyssonklein.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.thallyssonklein.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.controller.MetricsControllerTest" />
+      <option name="METHOD_NAME" value="shouldMetricMonth4Ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TesteIlegra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.thallyssonklein.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.thallyssonklein.controller" />
+      <option name="MAIN_CLASS_NAME" value="br.com.thallyssonklein.controller.MetricsControllerTest" />
+      <option name="METHOD_NAME" value="shouldMetricWeek4Ok" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,7 +416,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IngestControllerTest.shouldPersistWhenAllParametersAreOk" />
+        <item itemvalue="JUnit.MetricsControllerTest.shouldMetric5Ok" />
+        <item itemvalue="JUnit.MetricsControllerTest.shouldMetricMonth4Ok" />
+        <item itemvalue="JUnit.MetricsControllerTest.shouldMetricWeek4Ok" />
+        <item itemvalue="JUnit.MetricsControllerTest.shouldMetricDay4Ok" />
+        <item itemvalue="JUnit.MetricsControllerTest.shouldMetric3Ok" />
       </list>
     </recent_temporary>
   </component>
@@ -290,23 +438,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IngestControllerTest_shouldPersistWhenAllParametersAreOk - 2019.05.15 at 12h 27m 17s.xml">
-      <configuration name="IngestControllerTest.shouldPersistWhenAllParametersAreOk" configurationId="JUnit" />
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 08h 57m 56s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IngestControllerTest_shouldPersistWhenAllParametersAreOk - 2019.05.15 at 12h 28m 15s.xml">
-      <configuration name="IngestControllerTest.shouldPersistWhenAllParametersAreOk" configurationId="JUnit" />
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 08h 59m 48s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IngestControllerTest_shouldPersistWhenAllParametersAreOk - 2019.05.15 at 12h 29m 22s.xml">
-      <configuration name="IngestControllerTest.shouldPersistWhenAllParametersAreOk" configurationId="JUnit" />
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 09h 04m 37s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IngestControllerTest_shouldPersistWhenAllParametersAreOk - 2019.05.15 at 12h 30m 19s.xml">
-      <configuration name="IngestControllerTest.shouldPersistWhenAllParametersAreOk" configurationId="JUnit" />
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 09h 06m 55s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 09h 11m 16s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 09h 19m 45s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetricWeek4Ok - 2019.05.17 at 09h 20m 41s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricWeek4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetricMonth4Ok - 2019.05.17 at 09h 22m 53s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricMonth4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetricMonth4Ok - 2019.05.17 at 09h 26m 18s.xml">
+      <configuration name="MetricsControllerTest.shouldMetricMonth4Ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricsControllerTest_shouldMetric5Ok - 2019.05.17 at 09h 28m 04s.xml">
+      <configuration name="MetricsControllerTest.shouldMetric5Ok" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
+    <frame x="0" y="-1" width="1366" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21969697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22348484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -315,20 +482,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294702" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.65066224" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900663" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.65066224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.61754966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3272727" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32615894" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3294702" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.125" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.125" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -338,10 +505,46 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java</url>
+          <line>86</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>213</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -350,17 +553,56 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>metric.getTop3ByTime()[2]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>metric.getTop3ByTime()[3]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>metric.getTop3ByTime()[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>metric.getTop3ByTime()[1]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>metric.getTop3ByTime()[0].equals(&quot;top1OfCurrentMonth&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cal.get(Calendar.WEEK_OF_MONTH)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cal2.get(Calendar.WEEK_OF_MONTH)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.getKey()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>top3ByTime</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/App.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -369,28 +611,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/MetricsControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/TopByRegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/MetricsControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/jpa/EntityManagerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -401,26 +622,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/HealthControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/HealthControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/HealthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -438,20 +640,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="329">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Log.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -465,24 +667,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/IngestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/TopByRegion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="517" column="87" selection-start-line="517" selection-start-column="87" selection-end-line="517" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/IngestControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-343">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/IngestControllerTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/runners/JUnit45AndHigherRunnerImpl.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="56" column="94" lean-forward="true" selection-start-line="56" selection-start-column="94" selection-end-line="56" selection-end-column="94" />
+        <state relative-caret-position="51">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-12.0.1/lib/src.zip!/java.base/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="451" column="28" selection-start-line="451" selection-start-column="28" selection-end-line="451" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/entity/Metric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/thallyssonklein/controller/MetricsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="90" column="81" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3950#3963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/thallyssonklein/controller/MetricsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="211" column="99" selection-start-line="211" selection-start-column="99" selection-end-line="211" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
           </folding>
         </state>
       </provider>

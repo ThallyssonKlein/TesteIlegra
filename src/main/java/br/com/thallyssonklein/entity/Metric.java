@@ -8,8 +8,6 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
-@EqualsAndHashCode
 public class Metric {
 
     private String[] top3MostAccess;

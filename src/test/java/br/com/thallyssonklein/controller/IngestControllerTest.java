@@ -1,4 +1,4 @@
-package br.com.thallyssonklein;
+package br.com.thallyssonklein.controller;
 
 import br.com.thallyssonklein.controller.CustomResponse;
 import br.com.thallyssonklein.controller.IngestController;

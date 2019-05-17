@@ -30,7 +30,7 @@ public class Util {
     public static Map<String, Integer> sortMap(Map<String, Integer> map){
         return map.entrySet()
                 .stream()
-                .sorted(Map.Entry.comparingByValue())
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
