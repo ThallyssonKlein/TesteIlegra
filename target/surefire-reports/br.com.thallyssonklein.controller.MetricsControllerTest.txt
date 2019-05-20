@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.thallyssonklein.controller.MetricsControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in br.com.thallyssonklein.controller.MetricsControllerTest
-shouldAllMetrics(br.com.thallyssonklein.controller.MetricsControllerTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.NullPointerException
-	at br.com.thallyssonklein.controller.MetricsControllerTest.shouldAllMetrics(MetricsControllerTest.java:59)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 s - in br.com.thallyssonklein.controller.MetricsControllerTest

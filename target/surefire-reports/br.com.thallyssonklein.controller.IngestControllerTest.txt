@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.thallyssonklein.controller.IngestControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.831 s - in br.com.thallyssonklein.controller.IngestControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.915 s - in br.com.thallyssonklein.controller.IngestControllerTest

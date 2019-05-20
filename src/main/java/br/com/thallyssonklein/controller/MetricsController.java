@@ -62,7 +62,7 @@ public class MetricsController extends HttpServlet {
         List<TopByRegion> topByRegions = new ArrayList<TopByRegion>();
         List<Integer> regions = entityManager.createQuery("SELECT DISTINCT region FROM LOGS").getResultList();
         for(Integer region : regions){
-            List<String> urls2 = (List<String>) entityManager.createQuery("SELECT url FROM LOGS WHERE region=" + region.toString()).getResultList();
+            List<String> urls2 = (List<String>) entityManager.createNativeQuery("SELECT url FROM LOGS WHERE region=" + region.toString()).getResultList();
             Map<String, Integer> sortedByCount2 = Util.sortMap(Util.countFrequencies(urls2));
             int i2 = 0;
             String[] top3MostRegion = new String[3];
@@ -109,7 +109,7 @@ public class MetricsController extends HttpServlet {
                     }
                 }
                 break;
-            case "month":
+            case "year":
                 for(Log l : logs){
                     int year = l.getTimes().toInstant().atZone(ZoneId.systemDefault()).toLocalDate().getYear();
                     if(year == cal.get(Calendar.YEAR)){
