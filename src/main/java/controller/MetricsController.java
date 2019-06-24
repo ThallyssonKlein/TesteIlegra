@@ -11,3 +11,8 @@ public class MetricsController {
         return "Metrics";
     }
 }
+
+class Metric{
+    String name;
+    String[] values;
+}

@@ -8,6 +8,7 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 @EqualsAndHashCode
 public class Log {
@@ -24,4 +25,10 @@ public class Log {
     private String userUid;
 
     private Integer region;
+
+    private Integer frequence;
+
+    public void addFrequence(){
+        ++frequence;
+    }
 }
