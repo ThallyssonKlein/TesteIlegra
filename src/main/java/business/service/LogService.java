@@ -5,7 +5,8 @@ import business.validator.VerifyIfLogIsOfTheWeekValidator;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import main.Util;
+import business.service.util.Util;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import persistence.entity.Log;
@@ -20,12 +21,11 @@ import java.util.Optional;
 public class LogService {
 
     private final LogRepository logRepository;
-    private final VerifyIfLogIsOfTheWeekValidator verifyIfLogIsOfTheWeekValidator;
+    private final VerifyIfLogIsOfTheWeekValidator verifyIfLogIsOfTheWeekValidator = new VerifyIfLogIsOfTheWeekValidator();
 
     @Autowired
-    public LogService(LogRepository logRepository, VerifyIfLogIsOfTheWeekValidator verifyIfLogIsOfTheWeekValidator){
+    public LogService(LogRepository logRepository){
         this.logRepository = logRepository;
-        this.verifyIfLogIsOfTheWeekValidator = verifyIfLogIsOfTheWeekValidator;
     }
 
     public void addFrequenceOrSave(Log log){
@@ -37,8 +37,9 @@ public class LogService {
         }
     }
     public String[] findTop3MostAccessedUrlsOfTheWorld(){
-        Log[] logsSortedsBySequence = logRepository.findOrderByFrequence();
-        return new String[]{logsSortedsBySequence[0].getUrl(), logsSortedsBySequence[1].getUrl(), logsSortedsBySequence[2].getUrl()};
+        List<Log> logsSortedsBySequence = logRepository.findOrderByFrequence();
+        return new String[]{logsSortedsBySequence.get(0).getUrl(),
+                logsSortedsBySequence.get(1).getUrl(), logsSortedsBySequence.get(2).getUrl()};
     }
 
     public List<Region> findTop3MostAccessedUrlsGroupedByRegion(){
@@ -59,27 +60,47 @@ public class LogService {
     }
 
     public String[] findTop3UrlMostAccessedOfDay(int day){
-        List<Log> logList = logRepository.findLogsOfTheDay(day);
-        return new String[]{logList.get(0).getUrl(), logList.get(1).getUrl(),
-                            logList.get(2).getUrl()};
+        List<Log> logsOrderByFrequence = logRepository.findOrderByFrequence();
+        List<Log> logsOfThisDay = new ArrayList<>();
+        DateTime dateTimeObj;
+        for(Log l : logsOrderByFrequence){
+            dateTimeObj = new DateTime(l.getWhenAccessed());
+            if(dateTimeObj.getDayOfMonth() == day){
+                logsOfThisDay.add(l);
+            }
+        }
+        return new String[]{logsOfThisDay.get(0).getUrl(), logsOfThisDay.get(1).getUrl(),
+                logsOfThisDay.get(2).getUrl()};
     }
 
     public String[] findTop3UrlMostAccessedOfYear(int year){
-        List<Log> logList = logRepository.findLogsOfTheYear(year);
-        return new String[]{logList.get(0).getUrl(), logList.get(1).getUrl(),
-                logList.get(2).getUrl()};
+        List<Log> logsOrderByFrequence = logRepository.findOrderByFrequence();
+        List<Log> logsOfThisYear = new ArrayList<>();
+        DateTime dateTimeObj;
+        for(Log l : logsOrderByFrequence){
+            dateTimeObj = new DateTime(l.getWhenAccessed());
+            if(dateTimeObj.getYear() == year){
+                logsOfThisYear.add(l);
+            }
+        }
+        return new String[]{logsOfThisYear.get(0).getUrl(), logsOfThisYear.get(1).getUrl(),
+                logsOfThisYear.get(2).getUrl()};
     }
 
     public String[] findTop3UrlMostAccessedOfTheWeek(int week) throws ArrayIndexOutOfBoundsException{
         if(week <= 4 && week > 0){
-            List<Log> logsOfTheCurrentMonth = logRepository.findLogsOfTheMonth(Util.getMonthOfTheYear());
-            List<Log> logsOfTheWeek = new ArrayList<>();
-            for(int i = 0; i <= logsOfTheCurrentMonth.size(); ++i){
-                if(verifyIfLogIsOfTheWeekValidator.validate(logsOfTheCurrentMonth.get(i), week)){
-                    logsOfTheWeek.add(logsOfTheCurrentMonth.get(i));
+            List<Log> logsOrderByFrequence = logRepository.findOrderByFrequence();
+            List<Log> logsOfThisWeek = new ArrayList<>();
+            DateTime dateTimeObj;
+            for(Log l : logsOrderByFrequence){
+                dateTimeObj = new DateTime(l.getWhenAccessed());
+                if(dateTimeObj.getMonthOfYear() == Util.getMonthOfTheYear() &&
+                        verifyIfLogIsOfTheWeekValidator.validate(l, week)){
+                    logsOfThisWeek.add(l);
                 }
             }
-            return new String[]{logsOfTheWeek.get(0).getUrl(), logsOfTheWeek.get(1).getUrl(), logsOfTheWeek.get(2).getUrl()};
+            return new String[]{logsOfThisWeek.get(0).getUrl(),
+                    logsOfThisWeek.get(1).getUrl(), logsOfThisWeek.get(2).getUrl()};
         }else{
             throw new InvalidParameterException();
         }
@@ -87,11 +108,19 @@ public class LogService {
 
     public String findTheMinuteWithMoreAccessInAllUrls(){
         LastMinute lastMinute = new LastMinute();
+        List<Log> logsOrderByFrequence = logRepository.findOrderByFrequence();
         for(int i = 0; i<=60; ++i){
-            List<Log> logsOfTheMinute = logRepository.findLogsOfTheMinute(i);
-            if(lastMinute.getAccessCount() < logsOfTheMinute.size()){
+            List<Log> logsOfThisMinute = new ArrayList<>();
+            DateTime dateTimeObj;
+            for(Log l : logsOrderByFrequence){
+                dateTimeObj = new DateTime(l.getWhenAccessed());
+                if(dateTimeObj.getMinuteOfHour() == i){
+                    logsOfThisMinute.add(l);
+                }
+            }
+            if(lastMinute.getAccessCount() < logsOfThisMinute.size()){
                 lastMinute.setMinuteNumber(i);
-                lastMinute.setAccessCount(logsOfTheMinute.size());
+                lastMinute.setAccessCount(logsOfThisMinute.size());
             }
         }
         return String.valueOf(lastMinute.getMinuteNumber());

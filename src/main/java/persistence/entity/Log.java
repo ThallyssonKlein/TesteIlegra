@@ -25,7 +25,7 @@ public class Log {
 
     private Integer region;
 
-    private Integer frequence;
+    private Integer frequence = 0;
 
     public void addFrequence(){
         ++frequence;

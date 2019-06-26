@@ -1,20 +1,43 @@
 package persistence.repository.Impl;
 
+import com.mongodb.client.MongoCursor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.query.Query;
 import persistence.entity.Log;
-import persistence.repository.LogRepository;
+import persistence.repository.LogRepositoryCustom;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public abstract class LogRepositoryImpl implements LogRepository {
+public class LogRepositoryImpl implements LogRepositoryCustom {
+
+    private final MongoOperations mongoOperations;
+
+    @Autowired
+    protected LogRepositoryImpl(MongoOperations mongoOperations) {
+        this.mongoOperations = mongoOperations;
+    }
 
     @Override
-    public Log[] findOrderByFrequence(){
-        Log[] toReturn = new Log[3];
-        List<Log> logList = this.findAll(Sort.by("frequence").descending());
-        toReturn[0] = logList.get(0);
-        toReturn[1] = logList.get(1);
-        toReturn[2] = logList.get(2);
+    public Log findLessAccessedLog() throws ArrayIndexOutOfBoundsException{
+        return mongoOperations.find(
+                new Query().with(new Sort(Sort.Direction.ASC, "frequence")), Log.class).get(0);
+    }
+
+    @Override
+    public List<Log> findOrderByFrequence(){
+        return mongoOperations.find(new Query().with(new Sort(Sort.Direction.DESC, "frequence")), Log.class);
+    }
+
+    @Override
+    public List<Integer> findAllRegions(){
+        List<Integer> toReturn = new ArrayList<>();
+        for (MongoCursor<Integer> it = mongoOperations.getCollection("logs").distinct("region", Integer.class).iterator(); it.hasNext(); ) {
+            Integer i = it.next();
+            toReturn.add(i);
+        }
         return toReturn;
     }
 }

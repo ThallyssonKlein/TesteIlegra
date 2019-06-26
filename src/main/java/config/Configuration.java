@@ -1,23 +1,22 @@
 package config;
 
-import com.mongodb.*;
+import business.service.LogService;
+import com.mongodb.MongoClient;
 import controller.LogController;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.env.Environment;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import persistence.entity.Log;
 import persistence.repository.LogRepository;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @org.springframework.context.annotation.Configuration
 @EnableWebMvc
 @EnableMongoRepositories(basePackageClasses = LogRepository.class)
-@ComponentScan(basePackageClasses = LogController.class)
+@EntityScan(basePackageClasses = Log.class)
+@ComponentScan(basePackageClasses = {LogController.class, LogService.class})
 public class Configuration extends AbstractMongoConfiguration {
 
     @Override
@@ -26,6 +25,7 @@ public class Configuration extends AbstractMongoConfiguration {
     }
 
     @Override
+    @Bean
     public MongoClient mongoClient() {
         return new MongoClient("127.0.0.1", 27017);
     }

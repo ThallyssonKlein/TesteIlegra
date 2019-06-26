@@ -23,7 +23,7 @@ public class MetricsController {
     }
 
     @GetMapping("/metrics")
-    public String metrics(@RequestParam(required = false) int day, @RequestParam(required = false) int week, @RequestParam(required = false) int year){
+    public String metrics(@RequestParam(required = false) Integer day, @RequestParam(required = false) Integer week, @RequestParam(required = false) Integer year){
         Gson gsonObject = new Gson();
         String toReturn = gsonObject.toJson(new Metric("Top 3 Most Accessed Urls of the World", logService.findTop3MostAccessedUrlsOfTheWorld()));
         for(Region r : logService.findTop3MostAccessedUrlsGroupedByRegion()){
